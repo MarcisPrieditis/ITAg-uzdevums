@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tresa Versija: FlexBox</title>
+<link href="styles3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <nav>
+    <ul>
+      <li><a href="pirmaVersija.html">Pirmā versija</a></li>
+      <li><a href="otraVersija.html">Otrā versija</a></li>
+      <li><a class="active" href="tresaVersija.html">Trešā versija</a></li>
+      <li><a href="ceturtaVersija.html">Ceturtā versija</a></li>
+    </ul>
+  </nav>
+  <div id="viss">
+    <header>
+      <div class="pogaDrop">
+      <!--   <button class="accordion">Soc.</button> DropDown Poga-->
+        <div id="ikonuPozicija" class="panel">
+          <a href="#"><img class="ikonas" src="bildes/facebook.png"></a>
+          <img class="ikonas" src="bildes/twitter.png">
+          <img class="ikonas" src="bildes/instagram.png">
+        </div>
+      </div>
+      <h1>Pilsētu gids</h1>
+    </header>
+    <main>
+      <div id="flex-container">
+        <h2 class="flex-Text" id="virs">Valmiera</h2>
+        <h2 class="flex-Text" id="virs">Cēsis</h2>
+        <h2 class="flex-Text" id="virs">Rīga</h3>
+      </div>
+         <div id="flex-container">
+           <div id="kaste" class="flex-Text"><a href="#" target="_blank"><div id="bilzuAile1"></div></a></div>
+           <div id="kaste" class="flex-Text"><a href="#" target="_blank"><div id="bilzuAile2"></div></a></div>
+           <div id="kaste" class="flex-Text"><a href="#" target="_blank"><div id="bilzuAile3"></div></a></div>
+         </div>
+          <div id="flex-container">
+            <div class="flex-Text teksts">Valmiera ir viena no senākajām Latvijas pilsētām, Hanzas savienības locekle, šobrīd Vidzemes plānošanas reģiona lielākā pilsēta. Tajā atrodas Valmieras Svētā Sīmaņa baznīca un Livonijas ordeņa Valmieras viduslaiku pils drupas.
+              Ko apskatīt Valmierā:
+                <ul>
+                  <li>Pirmā vieta</li>
+                  <li>Otrā vieta</li>
+                  <li>Trešā vieta</li>
+                </ul>
+            </div>
+            <p class="flex-Text teksts">
+              Rīga ir Latvijas galvaspilsēta un galvenais rūpnieciskais, darījumu, kultūras, sporta un finanšu centrs Baltijas valstīs, kā arī nozīmīga ostas pilsēta. Ar 704 476 iedzīvotājiem 2017. gadā[3] tā ir lielākā pilsēta Baltijas valstīs un trešā lielākā pilsēta (pēc Sanktpēterburgas un Stokholmas) visā Baltijas jūras reģionā (pēc iedzīvotāju skaita pilsētas robežās). Rīgas pilsētas platība ir 307,17 km2. Rīgas pilsētas robežās dzīvo aptuveni viena trešdaļa, bet Rīgas aglomerācijā (Rīga un tai pieguļošā teritorija, ieskaitot tuvākās pilsētas) gandrīz puse (0,94 miljoni) visu Latvijas iedzīvotāju. Rīgas plānošanas reģionā 2010. gada sākumā dzīvoja 1 081 137 iedzīvotāji.
+            </p>
+            <p class="flex-Text teksts">
+              Cēsis ir pilsēta Latvijā, Vidzemes augstienes ziemeļu daļā, Cēsu novada administratīvais centrs. Cēsis atrodas 90 km no Rīgas. Gar pilsētu plūst Gaujas upe. Cēsis ir viena no vecākajām pilsētām Latvijā, Hanzas savienības pilsēta un viena no Livonijas ordeņa mestru rezidencēm (1237—1561). Cēsis bija viena no Latvijas pilsētām, kas piedalījās konkursā par Eiropas kultūras galvaspilsētas statusu 2014. gadā, taču 2009. gada 15. septembrī Eiropas Komisijas žūrija ieteica šo statusu Latvijā piešķirt Rīgai.[3]
+            </p>
+          </div>
+    </main>
+    <footer>
+      <div id="copyright">
+       <p>@c kajsfljaf</p>
+      </div>
+      <div id="links">
+       <a href="#" target="_blank">Lapu izveidoja<img id="logo" src="bildes/logo.png" alt="logo"></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>
+

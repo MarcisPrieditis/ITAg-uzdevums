@@ -1,0 +1,245 @@
+/*************
+  FONT FACE
+***************/
+@font-face {
+  font-family: pirmais;
+  src: url(fonti/pirmais.ttf);
+}
+@font-face {
+  font-family: otrais;
+  src: url(fonti/otrais.ttf);
+}
+/************************
+        NAV
+**************************/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    margin-left: -10px;
+
+}
+nav li {
+  float: left;
+  border-right: 1px solid lightblue;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+li a:hover {
+background: none;
+}
+/****************************
+
+***************************8*/
+h1 {
+  text-align: center;
+  font-family: pirmais, san-serif;
+  font-size: 75px;
+  margin-left: 25px;
+}
+
+body {
+  background-image: url("bildes/cesis.jpg");
+  /*background-color: gray;*/
+  background-size: cover;
+  color: white;
+}
+ #viss {
+  
+  max-width:  960px;
+  margin:auto ;
+  -webkit-box-shadow: 0px 0px 70px 13px rgba(0,0,0,0.67);
+  -moz-box-shadow: 0px 0px 70px 13px rgba(0,0,0,0.67);
+  box-shadow: 0px 0px 70px 13px rgba(0,0,0,0.67);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+main {
+  background-color: #FC9E4F;
+  color: #020122;
+  width: 100%;
+}
+header {
+  max-height: 20%;
+  /*max-width: 950px;*/
+  background-color: #FF521B;
+  padding: 1px 0 ;
+  margin-top: 15px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+footer {
+  background-color: #020122;  
+  padding: 50px;
+  margin-bottom: 15px;
+}
+/************
+  BILZU SLIDE
+**************/
+#bilzuAile1 {
+    width: 250px;
+    height: 150px;
+   	background-image: url(bildes/valmiera.jpg);  
+   	background-size: cover;
+    transition: width 1.5s, height 1.5s;
+    -webkit-box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+}
+#bilzuAile1:hover {
+	 width: 500px;
+  height: 300px;
+  
+}
+#bilzuAile2 {
+    width: 250px;
+    height: 150px;
+   	background-image: url(bildes/cesis.jpg);  
+   	background-size: cover;
+    transition: width 1.5s, height 1.5s;
+    -webkit-box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+   -moz-box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+    box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+ }
+#bilzuAile2:hover {
+	 width: 500px;
+    height: 300px;
+}
+#bilzuAile3 {
+    width: 250px;
+    height: 150px;
+   	background-image: url(bildes/riga.jpg);  
+   	background-size: cover;
+    transition: width 1.5s, height 1.5s;
+    -webkit-box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+    box-shadow: 14px 21px 44px -8px rgba(0,0,0,0.75);
+ }
+#bilzuAile3:hover {
+	 width: 500px;
+    height: 300px;
+}
+#kaste {
+	width: 250px;
+	height: 150px;
+	transition: width 1.5s, height 1.5s;
+}
+#kaste:hover {
+	 width: 500px;
+    height: 300px;
+}
+/*****************
+      IKONAS
+**************/
+#ikonuPozicija {
+  float: right;
+  margin-top: 50px; 
+}
+.ikonas {
+  display: block;
+  padding-bottom: 15px;
+  width: 30px;
+  height: 30px; 
+}
+/**********************
+        FLEX BOX
+***********************/
+
+#flex-container {
+  display: flex;
+  /*background-color: DodgerBlue;*/
+}
+
+#flex-container .flex-Text {
+/*  background-color: #f1f1f1;*/
+  width: 33%;
+  margin: 5px;
+  
+  color: black;
+  }
+
+#virs {
+  font-size: 32px;
+  text-align: center;
+}
+.teksts {
+  text-align: justify;
+}
+/***************
+  FOOTER
+***************/
+#copyright {
+    color: lightgray;
+    float:left;
+}
+#links {
+  float:right;
+}
+#logo {
+  width: 30px;
+  height: 30px;
+}
+/*************
+  link design
+*************/
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background: linear-gradient(to bottom right, #315c42, #f5f710);
+}
+/*************
+    ACCORDION poga
+**************/
+/*.accordion {
+    background-color: #020122;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid white;
+    float: right;
+    margin: 10px 30px 0 0;
+}
+.active, .accordion:hover {
+    background-color: white;
+    color: black;
+}
+.panel {
+    /*padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    /*overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.pogaDrop {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  border: 1px solid white;
+}*/

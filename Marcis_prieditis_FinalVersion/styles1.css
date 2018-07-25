@@ -1,0 +1,241 @@
+/**************
+	Teksts
+*****************/
+@font-face {
+	font-family: pirmais;
+	src: url(fonti/pirmais.ttf);
+}
+@font-face {
+	font-family: otrais;
+	src: url(fonti/otrais.ttf);
+}
+h1 {
+	text-align: center;
+	font-family: pirmais, san-serif;
+	font-size: 75px;
+	margin-left: 25px;
+}
+p {
+	font-size: 16px;
+	text-align: justify;
+	padding: 15px;
+}
+h2 {
+	
+	font-size: 32px;
+}
+/*************
+	Lapu background
+**********************/
+body {
+	background-image: url("bildes/cesis.jpg");
+	background-color: gray;
+	background-size: cover;
+}
+
+ #viss {
+	
+	max-width: 	960px;
+	margin:auto	;
+	-webkit-box-shadow: 0px 0px 70px 13px rgba(0,0,0,0.67);
+	-moz-box-shadow: 0px 0px 70px 13px rgba(0,0,0,0.67);
+	box-shadow: 0px 0px 70px 13px rgba(0,0,0,0.67);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+main {
+	background-color: #FC9E4F;
+	color: #020122;
+	width: 100%;
+}
+header {
+	height: 175px;
+	background-color: #FF521B;
+	padding: 1px 0 ;
+	margin-top: 15px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+/*****************
+	Ikonas
+**************/
+#ikonuPozicija {
+	float: right;
+	margin-top: 50px;	
+}
+.ikonas {
+	display: block;
+	padding-bottom: 15px;
+	width: 30px;
+	height: 30px;	
+}
+/****************
+	BILDES IZSKATS
+***************/
+#bilde {
+	max-width: 80%;
+	/*max-height: 30%;*/
+	margin: auto;
+	-webkit-box-shadow: 13px 14px 40px -1px rgba(0,0,0,0.67);
+	-moz-box-shadow: 13px 14px 40px -1px rgba(0,0,0,0.67);
+	box-shadow: 13px 14px 40px -1px rgba(0,0,0,0.67);
+	display: block;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	position: relative;
+	z-index: 1;
+	
+}
+/***************************
+		CONTAINER
+****************************/
+/*#container {
+	-webkit-column-count: 3;
+	column-count: 3;
+	column-rule: 1px solid lightblue;
+	column-gap: 3px;
+	padding-top:10px;
+
+	width: 100%;
+	margin-bottom: -20px;
+	column-fill: balance;
+	text-align: center;
+}
+*/
+.box {
+	width: 318px;
+	/*padding: 25px;*/
+	border: 1px solid lightblue;
+	float: left;
+	text-align: center;
+	border-top: none;
+	border-bottom: none;
+	padding:10px 0;
+	margin-top: 0px;
+}
+/*#container {
+	display: table;
+	float: left;
+}*/
+
+.containerBildes {
+	-webkit-column-count: 3;
+	column-count: 3;
+	width: 100%;
+	position: static;
+
+}
+.containerTeksts {
+	-webkit-column-count: 3;
+	column-count: 3;
+	column-rule: 1px solid lightblue;
+	column-gap: 5px;   /* Bez column gap, teksta daļas nav īstajās ailēs kur jābūt, Teksts no Rīgas ieslīd Cēsis sadaļā */
+}
+#tekstsValmiera {
+	 box-sizing: border-box;
+	margin-top: 5px;
+}
+#tekstsCesis {
+	box-sizing: border-box;
+
+	margin-top: -10px;
+}
+#tekstsRiga {
+
+}
+/***************
+	FOOTER
+***************/
+#copyright {
+		color: lightgray;
+		float:left;
+}
+#links {
+	float:right;
+}
+#logo {
+	width: 30px;
+	height: 30px;
+}
+footer {
+	background-color: #020122;	
+	padding: 50px;
+	margin-bottom: 15px;
+}
+/*************
+	link design
+*************/
+a {
+	color: lightgray;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	background: linear-gradient(to bottom right, #315c42, #f5f710);
+}
+/************************
+        NAV
+**************************/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+}
+nav li {
+	float: left;
+	border-right: 1px solid lightblue;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+li a:hover {
+background: none;
+}
+
+
+/***************************
+
+****************************/
+/*@media only screen and (max-width: 650px) {
+ 	#viss	{
+  	max-width: 100%;
+}
+	body {
+		margin:0px;
+	}*/
+/*	.box {
+	width: 100%;
+}
+	.box1 {
+		width: 100%;
+	}
+	#containerBildes {
+		column-count: 0;
+	}
+}*/
+@-moz-document url-prefix() {
+   	footer {
+   		margin-top: -16px;
+   	}
+
+   }
